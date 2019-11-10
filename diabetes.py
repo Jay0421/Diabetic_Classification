@@ -10,3 +10,11 @@ from sklearn.preprocessing import LabelEncoder
 
 data = pd.read_csv("diabetes.csv")
 data.head()
+
+
+# Handling Missing Values
+
+data.isnull().sum()
+data = data.replace(0, np.nan)
+data = data.fillna(data.mean())
+
