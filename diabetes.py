@@ -6,6 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
 
 # Loading dataset
 
@@ -34,3 +35,7 @@ y = data.iloc[:, 8].values
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 421)
 
 # Build the model
+
+classifier = RandomForestClassifier()
+classifier.fit(x_train, y_train)
+
