@@ -28,3 +28,5 @@ data.head()
 
 # Train Test Split
 
+x = data.iloc[:, 0:8].values
+y = data.iloc[:, 8].values
