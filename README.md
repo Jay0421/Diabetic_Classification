@@ -1,2 +1,2 @@
 # Diabetic_Classification
-ML_Prediction
+ML_Prediction using Traditional model
